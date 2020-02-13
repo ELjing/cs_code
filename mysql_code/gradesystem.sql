@@ -25,7 +25,7 @@ CREATE TABLE mark
   score int NOT NULL,
   PRIMARY KEY(mid),
   FOREIGN KEY(sid) REFERENCES student(sid),
-  FOREIGN KEY(cid) REFERENCES student(cid)
+  FOREIGN KEY(cid) REFERENCES course(cid)
 );
   
 INSERT INTO student VALUES(1, 'Tom', 'male'), (2, 'Jack', 'male'), (3, 'Rose', 'female');
